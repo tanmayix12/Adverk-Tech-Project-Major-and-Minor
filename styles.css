@@ -1,0 +1,134 @@
+*{
+    margin :0;
+
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 55px;
+    background-color: #1C1C2D;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: #FFFFFF;
+}
+.logo-container{
+    flex:1;
+}
+.logo{
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.menu-container{
+    flex: 6;
+    
+    
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    justify-content:flex-end;
+    
+
+}
+.menu-list-item{
+    margin-left: 30px;
+
+
+}
+.icon-container{
+    margin-left:30px;
+}
+.filters{
+    padding:1rem 2rem;
+    display:flex;
+    gap:1rem;
+}
+.dropdowm{
+    background: #1a1d24;
+    padding: 0.5rem, 1rem;
+    border-radius:5px;
+    border: 1px solid #2a2e37;
+    color:white;
+    cursor: pointer;
+    
+
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.movie-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(118, 82, 82, 0.9));
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.movie-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.movie-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn {
+    background: rgba(58, 25, 25, 0.5);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.action-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
